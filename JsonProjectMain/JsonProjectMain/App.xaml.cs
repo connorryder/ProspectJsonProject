@@ -89,7 +89,7 @@ namespace JsonProjectMain
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }
 
-        /// jesus christ its json bourne
+        ///  
         /// Invoked when application execution is being suspended.  Application state is saved
         /// without knowing whether the application will be terminated or resumed with the contents
         /// of memory still intact.
@@ -101,6 +101,7 @@ namespace JsonProjectMain
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+            //TESTTESTTEST
         }
     }
 }
