@@ -1,0 +1,73 @@
+﻿<UserControl
+    x:Class="JsonProjectMain.MyUserControl1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JsonProjectMain"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="520"
+    d:DesignWidth="500">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,-13">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <StackPanel>
+                <TextBlock Text="Title"/>
+                <TextBox Text="Enter the Title of the course"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Type of Course"/>
+                <TextBox Text="Enter the Type of course"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Exam Board for the course"/>
+                <TextBox Text="Enter the Exam Board"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Enter Description of the course"/>
+                <ScrollViewer>
+                    <TextBox Text="Description"/>
+                </ScrollViewer>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Why choose this course"/>
+                <ScrollViewer>
+                    <TextBox Text=" Why? "/>
+                </ScrollViewer>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Entry requirements"/>
+                <ScrollViewer>
+                    <TextBox Text=" "/>
+                </ScrollViewer>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Course Structure"/>
+                <ScrollViewer>
+                    <TextBox Text=" "/>
+                </ScrollViewer>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Trips"/>
+                <ScrollViewer>
+                    <TextBox Text=" "/>
+                </ScrollViewer>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Progression"/>
+                <ScrollViewer>
+                    <TextBox Text=" "/>
+                </ScrollViewer>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="What our students think"/>
+                <ScrollViewer>
+                    <TextBox Text=" "/>
+                </ScrollViewer>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
