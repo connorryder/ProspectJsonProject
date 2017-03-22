@@ -40,15 +40,12 @@ namespace JsonProjectMain
 
         public partial class MainViewModel_
         {
-            public void Serialize()
-            {
-                //Course.courses = JsonConvert.SerializeObject(Course);
-            }
+           
             public async void Save()
             {
                 FileSavePicker savePicker = new FileSavePicker();
                 savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
-                savePicker.FileTypeChoices.Add(".json", new List<string>() { ".txt" });
+                savePicker.FileTypeChoices.Add(".json", new List<string>() { ".json" });
                 savePicker.DefaultFileExtension = ".json";
                 savePicker.SuggestedFileName = "New Document";
                 StorageFile file = await savePicker.PickSaveFileAsync();
