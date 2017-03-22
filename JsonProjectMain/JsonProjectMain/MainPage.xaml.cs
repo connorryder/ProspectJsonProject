@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
+using Windows.Storage.Pickers;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +27,24 @@ namespace JsonProjectMain
         public MainPage()
         {
             this.InitializeComponent();
+            
+        }
+
+        public partial class MainViewModel_
+        {
+            public void Serialize()
+            {
+                //Course.courses = JsonConvert.SerializeObject(Course);
+            }
+            public async void Save()
+            {
+                FileSavePicker savePicker = new FileSavePicker();
+                savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
+                savePicker.FileTypeChoices.Add("Plain Text", new List<string>() { ".txt" });
+                savePicker.DefaultFileExtension = ".json";
+                savePicker.SuggestedFileName = "New Document";
+                StorageFile file = await savePicker.PickSaveFileAsync();
+            }
         }
     }
 }
