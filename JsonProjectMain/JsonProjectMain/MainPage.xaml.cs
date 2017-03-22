@@ -27,7 +27,15 @@ namespace JsonProjectMain
         public MainPage()
         {
             this.InitializeComponent();
+            MainViewModel_ x = new MainViewModel_();
+            this.Loaded += MainPage_Loaded;
             
+        }
+
+        private void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainViewModel_ x = new MainViewModel_();
+            x.Save();
         }
 
         public partial class MainViewModel_
@@ -40,7 +48,7 @@ namespace JsonProjectMain
             {
                 FileSavePicker savePicker = new FileSavePicker();
                 savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
-                savePicker.FileTypeChoices.Add("Plain Text", new List<string>() { ".txt" });
+                savePicker.FileTypeChoices.Add(".json", new List<string>() { ".txt" });
                 savePicker.DefaultFileExtension = ".json";
                 savePicker.SuggestedFileName = "New Document";
                 StorageFile file = await savePicker.PickSaveFileAsync();
