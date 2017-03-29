@@ -53,7 +53,7 @@ namespace JsonProjectMain
 
             public void AddToList(string box0, string box1, string box2, string box3, string box4, string box5, string box6, string box7, string box8, string box9)
             {
-                string[] box { box0,box1,box2,b}
+                string[] box = { box0, box1, box2, box3, box4, box5, box6, box7, box8, box9 };
                 for (int i = 0; i==10; i++)
                 {
                     
