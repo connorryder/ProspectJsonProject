@@ -98,6 +98,7 @@
     <Compile Include="MainViewModel\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainViewModel\MainViewModel.cs" />
     <Compile Include="Modelcode\Model.cs" />
     <Compile Include="MyUserControl1.xaml.cs">
       <DependentUpon>MyUserControl1.xaml</DependentUpon>
