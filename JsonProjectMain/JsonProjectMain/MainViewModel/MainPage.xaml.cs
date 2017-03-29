@@ -50,6 +50,21 @@ namespace JsonProjectMain
                 savePicker.SuggestedFileName = "New Document";
                 StorageFile file = await savePicker.PickSaveFileAsync();
             }
+
+            public void AddToList(string box0, string box1, string box2, string box3, string box4, string box5, string box6, string box7, string box8, string box9)
+            {
+                string[] box
+                for (int i = 0; i==10; i++)
+                {
+                    
+                }
+            }
+            private bool valid()
+            {
+                bool status = true;
+
+                return status;
+            }
         }
     }
 }
